@@ -16,7 +16,8 @@ SOURCES = [
     "https://raw.githubusercontent.com/Turtlecute33/adblocktest/refs/heads/master/src/d3host.txt",
     "https://www.github.developerdan.com/hosts/lists/ads-and-tracking-extended.txt",
     "https://raw.githubusercontent.com/soctrungkien/1HzH9Axaj/refs/heads/main/uploads/blocklist------.txt",
-    "https://raw.githubusercontent.com/soctrungkien/1HzH9Axaj/main/uploads/bloxkhosslt"
+    "https://raw.githubusercontent.com/soctrungkien/1HzH9Axaj/main/uploads/bloxkhosslt",
+    "https://raw.githubusercontent.com/bigdargon/hostsVN/master/hosts"
 ]
 
 DOMAIN_REGEX = re.compile(
