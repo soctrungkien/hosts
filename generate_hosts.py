@@ -173,7 +173,7 @@ def main():
     print(f"Total unique domains: {total_domains:,}")
 
     hosts_header = (
-        f"# Automatically Generated Blocklist\n"
+        f"# Automatic Generated Hosts Blocklist\n"
         f"# Updated: {created_at}\n"
         f"# Total Blocked Domains: {total_domains:,}\n\n"
     )
