@@ -172,7 +172,7 @@ def main():
     hosts_header = (
         f"# Automatically Generated Blocklist\n"
         f"# Updated: {created_at}\n"
-        f"# Total Blocked Domains: {total_domains:,}\n"
+        f"# Total Blocked Domains: {total_domains:,}\n\n"
     )
 
     output_filename = "hosts"
