@@ -6,17 +6,16 @@ on:
       - main
       - master
     paths-ignore:
-      - 'hosts' # Tránh bị lặp vô tận (infinite loop) khi bot commit lại file hosts
+      - 'hosts'
   schedule:
-    # Chạy tự động vào lúc 00:00 UTC hằng ngày
     - cron: '0 0 * * *'
-  workflow_dispatch: # Cho phép bấm nút "Run workflow" thủ công trên GitHub
+  workflow_dispatch:
 
 jobs:
   build-and-commit:
     runs-on: ubuntu-latest
     permissions:
-      contents: write # Cấp quyền ghi để commit file hosts lên repository
+      contents: write
 
     steps:
       - name: Checkout repository
@@ -34,10 +33,6 @@ jobs:
           pip install -r requirements.txt
 
       - name: Run Blocklist Generator Script
-        env:
-          # Tùy chọn: Truyền Proxy nếu bạn cài đặt Secret trong Repository (Settings -> Secrets)
-          HTTP_PROXY: ${{ secrets.HTTP_PROXY }}
-          HTTPS_PROXY: ${{ secrets.HTTP_PROXY }}
         run: python generate_hosts.py
 
       - name: Commit and Push updated hosts file
@@ -47,8 +42,9 @@ jobs:
           
           git add hosts
           if git diff --staged --quiet; then
-            echo "Không có thay đổi nào trong file hosts."
+            echo "No changes detected in hosts file."
           else
-            git commit -m "Auto generator hosts blocklist [$(date -u +'%Y-%m-%d %H:%M UTC')]"
+            git commit -m "Auto update hosts blocklist [$(date -u +'%Y-%m-%d %H:%M UTC')]"
             git push
           fi
+          
