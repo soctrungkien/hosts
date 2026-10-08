@@ -1,9 +1,5 @@
 # Automatic Generate Adblock Hosts
 
-[![GitHub stars](https://img.shields.io/github/stars/soctrungkien/hosts.svg?style=flat)](https://github.com/soctrungkien/hosts/stargazers)
-[![GitHub views](https://komarev.com/ghpvc/?username=soctrungkien&repo=hosts&label=Repo%20views&color=0e75b6&style=flat)](https://github.com/soctrungkien/hosts)
-[![Daily Update](https://img.shields.io/badge/Update-Daily%20at%2000%3A00%20UTC-green)](https://github.com/soctrungkien/hosts)
-
 An automated repository that compiles and generates a high-performance hosts blocklist to defeat ads, trackers, and telemetry. 
 
 ## Direct URL
