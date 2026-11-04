@@ -41,10 +41,11 @@ jobs:
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
           
           git add hosts
+          git add badge.json
           if git diff --staged --quiet; then
-            echo "No changes detected in hosts file."
+            echo "No changes detected."
           else
-            git commit -m "Auto update hosts blocklist [$(date -u +'%Y-%m-%d %H:%M UTC')]"
+            git commit -m "Auto update [$(date -u +'%Y-%m-%d %H:%M UTC')]"
             git push
           fi
           
