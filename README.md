@@ -2,6 +2,8 @@
 
 An automated repository that compiles and generates a high-performance hosts blocklist to defeat ads, trackers, and telemetry. 
 
+![Blocked Domains](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/soctrungkien/hosts/refs/heads/main/badge.json)
+
 ## Direct URL
 
 Copy this URL to use directly in your adblocker:
@@ -13,7 +15,7 @@ https://raw.githubusercontent.com/soctrungkien/hosts/refs/heads/main/hosts
 ## Features
 
 * **Auto-Update:** Automatically rebuilt every day at 00:00 UTC.
-* **Massive Coverage:** Blocks over 725k+ ad and tracking domains.
+* **Massive Coverage:** Blocks over 780k+ ad and tracking domains.
 * **Format Compatibility:** Standard hosts format, perfectly compatible with AdAway, BindHost, DNSMasq, or custom system hosts.
 * **Optimized:** Deduplicated and sorted for maximum resolution speed.
 
