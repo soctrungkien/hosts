@@ -2,7 +2,7 @@
 
 An automated repository that compiles and generates a high-performance hosts blocklist to defeat ads, trackers, and telemetry. 
 
-![Blocked Domains](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/soctrungkien/hosts/refs/heads/main/badge.json)
+![Blocked](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/soctrungkien/hosts/refs/heads/main/badge.json&style=for-the-badge)
 
 ## Direct URL
 
