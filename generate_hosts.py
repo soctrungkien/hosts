@@ -2,6 +2,7 @@ import os
 import re
 import socket
 import urllib.parse
+import json
 from datetime import datetime, timezone
 from concurrent.futures import ThreadPoolExecutor
 import requests
@@ -185,6 +186,18 @@ def main():
             f.write(f"0.0.0.0 {domain}\n")
 
     print(f"Saved hosts file successfully: {os.path.abspath(output_filename)}")
+
+    badge_data = {
+        "schemaVersion": 1,
+        "label": "Blocked",
+        "message": f"{total_domains:,}",
+        "color": "success",
+    }
+    badge_filename = "badge.json"
+    with open(badge_filename, "w", encoding="utf-8") as bf:
+        json.dump(badge_data, bf, indent=2)
+    print(f"Saved badge JSON successfully: {os.path.abspath(badge_filename)}")
+
 
 
 if __name__ == "__main__":
