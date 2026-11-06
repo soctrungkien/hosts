@@ -15,7 +15,7 @@ https://raw.githubusercontent.com/soctrungkien/hosts/refs/heads/main/hosts
 ## Features
 
 * **Auto-Update:** Automatically rebuilt every day at 00:00 UTC.
-* **Massive Coverage:** Blocks over 780k+ ad and tracking domains.
+* **Massive Coverage:** Blocks over 1.8M+ ad and tracking domains.
 * **Format Compatibility:** Standard hosts format, perfectly compatible with AdAway, BindHost, DNSMasq, or custom system hosts.
 * **Optimized:** Deduplicated and sorted for maximum resolution speed.
 
