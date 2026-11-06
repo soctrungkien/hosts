@@ -11,8 +11,6 @@ from fake_useragent import UserAgent
 SOURCES = [
     "https://adaway.org/hosts.txt",
     "https://gitlab.com/andryou/block/raw/master/chibi",
-    "https://pgl.yoyo.org/adservers/serverlist.php?hostformat=hosts&showintro=0&mimetype=plaintext",
-    "https://raw.githubusercontent.com/StevenBlack/hosts/master/hosts",
     "https://raw.githubusercontent.com/r-a-y/mobile-hosts/master/AdguardDNS.txt",
     "https://raw.githubusercontent.com/Turtlecute33/adblocktest/refs/heads/master/src/d3host.txt",
     "https://www.github.developerdan.com/hosts/lists/ads-and-tracking-extended.txt",
@@ -20,7 +18,21 @@ SOURCES = [
     "https://soctrungkien.github.io/1HzH9Axaj/uploads/bloxkhosslt",
     "https://raw.githubusercontent.com/bigdargon/hostsVN/master/hosts",
     "https://raw.githubusercontent.com/soctrungkien/hosts/refs/heads/main/hosts",
-    "https://soctrungkien.github.io/1HzH9Axaj/h"
+    "https://soctrungkien.github.io/1HzH9Axaj/h",
+    "https://pastefy.app/RLSrNXRA/raw",
+    "https://pastefy.app/4O14Tpjs/raw",
+    "https://raw.githubusercontent.com/xxcriticxx/.pl-host-file/refs/heads/master/hosts.txt",
+    "https://pgl.yoyo.org/adservers/serverlist.php?hostformat=hosts&showintro=0&mimetype=plaintext",
+    "https://raw.githubusercontent.com/StevenBlack/hosts/master/hosts",
+    "https://raw.githubusercontent.com/tekintian/hosts_ads_block/master/mobile/hosts",
+    "https://raw.githubusercontent.com/vokins/yhosts/master/hosts",
+    "https://raw.githubusercontent.com/yous/YousList/master/hosts.txt",
+    "https://someonewhocares.org/hosts/hosts",
+    "https://sysctl.org/cameleon/hosts",
+    "https://winhelp2002.mvps.org/hosts.txt",
+    "https://www.hostsfile.org/Downloads/hosts.txt",
+    "https://raw.githubusercontent.com/Goooler/1024_hosts/refs/heads/master/hosts",
+    "https://raw.githubusercontent.com/badmojr/1Hosts/refs/heads/master/Xtra/hosts.txt",
 ]
 
 DOMAIN_REGEX = re.compile(
