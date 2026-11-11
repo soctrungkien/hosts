@@ -9,6 +9,7 @@ import requests
 from fake_useragent import UserAgent
 
 SOURCES = [
+    "https://raw.githubusercontent.com/soctrungkien/hosts/refs/heads/main/hosts",
     "https://adaway.org/hosts.txt",
     "https://gitlab.com/andryou/block/raw/master/chibi",
     "https://raw.githubusercontent.com/r-a-y/mobile-hosts/master/AdguardDNS.txt",
